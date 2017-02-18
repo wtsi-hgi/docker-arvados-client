@@ -52,7 +52,7 @@ RUN (curl -fsSL https://apt.dockerproject.org/gpg | apt-key add -) \
        debian-$(lsb_release -cs) \
        main" \
     && apt-get update \
-    && apt-get -y install docker-engine=1.9.1 \
+    && apt-get -y install docker-engine=1.9.1-0~jessie \
     && rm -rf /var/lib/apt/lists/*
 
 # Set workdir and entrypoint

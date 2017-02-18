@@ -14,6 +14,7 @@ RUN apt-get update \
          libarvados-perl \
          python-arvados-fuse \
          python-arvados-python-client \
+         rubygem-arvados \
          rubygem-arvados-cli \
     && rm -rf /var/lib/apt/lists/*
 

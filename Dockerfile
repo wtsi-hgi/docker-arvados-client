@@ -44,6 +44,6 @@ RUN apt-get update \
          python-arvados-python-client \
     && rm -rf /var/lib/apt/lists/*
 
-# Set workdir and CMD
+# Set workdir and entrypoint
 WORKDIR /tmp
-CMD /usr/local/bin/arv
+ENTRYPOINT ["/usr/local/bin/arv"]

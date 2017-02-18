@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Setup Arvados repo and install prereqs
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+         apt-transport-https \
          apt-utils \
          software-properties-common \
          bison \

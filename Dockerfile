@@ -14,8 +14,9 @@ RUN apt-get update \
          libarvados-perl \
          python-arvados-fuse \
          python-arvados-python-client \
+         rubygem-arvados-cli \
     && rm -rf /var/lib/apt/lists/*
 
 # Set workdir and entrypoint
 WORKDIR /tmp
-ENTRYPOINT []
+ENTRYPOINT [/usr/local/bin/arv]
